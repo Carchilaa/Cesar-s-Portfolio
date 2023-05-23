@@ -8,7 +8,6 @@ main{
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
     width: 100%;
 }
 
@@ -193,24 +192,10 @@ footer{
     margin: 50px;
 }   
 
-section p{
-    padding-left: 5px;
-    
-}
-
-.Bio h2{
-    border: solid;
-    border-color: darkcyan;
-    background-color: grey;
-    color: white; 
-    border-radius: 10px;
-    padding-left: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
 .Bio p{
     color: white;
+    margin-left: 20px;
+
 }
 
 
@@ -220,7 +205,7 @@ section p{
     justify-content: space-evenly;
 }
 
-.title2{
+.title{
     color: white;
     border: solid;
     border-color: darkcyan;
@@ -231,18 +216,69 @@ section p{
     margin-right: 10px;
 
 }
-
-.Projets .Projet1 p{
-    color: white;
+.Projet1{
     border: solid;
+    border-color: white;
 }
 
-.Projets .Projet2 p{
+.Projet1 p{
     color: white;
-    border: solid;
 }
 
-.Projets .Projet3 p{
-    color: white;
-    border: solid;
+.Projet1 img{
+    width: 400px;
 }
+
+.Projet2{
+    border: solid;
+    border-color: white;
+}
+
+.Projet2 p{
+    color: white;
+   
+}
+
+.Projet2 img{
+    width: 315px;
+}
+
+.Projet3{
+    border: solid;
+    border-color: white;
+}
+
+.Projet3 p{
+    color: white;
+}
+
+
+.Projets div{
+    transition: all 0.3s ease;
+}
+
+.Projets div:hover {
+    transform: scale(1.2); 
+  }
+
+.Projets div img{
+    transition: all 0.3s ease;
+}
+
+.Projets div:hover img {
+    transform: scale(1.2);
+  }
+
+.Projets div p {
+    margin-left: 10px;
+    transition: all 0.3s ease; 
+  }
+
+
+  
+  
+  
+  
+  
+  
+  
