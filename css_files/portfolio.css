@@ -188,9 +188,15 @@ body section{
 }
 
 footer{
+    display: flex;
+    justify-content: center;
     border: solid;
-    margin: 50px;
+    background-color: black;
 }   
+
+footer p{
+    color: white;
+}
 
 .Bio p{
     color: white;
@@ -258,7 +264,7 @@ footer{
 }
 
 .Projets div:hover {
-    transform: scale(1.2); 
+    transform: scale(1.1); 
   }
 
 .Projets div img{
@@ -266,12 +272,17 @@ footer{
 }
 
 .Projets div:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
 .Projets div p {
     margin-left: 10px;
     transition: all 0.3s ease; 
+  }
+
+  .MaForm{
+    color: white;
+    border: solid;
   }
 
 
