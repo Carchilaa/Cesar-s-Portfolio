@@ -33,7 +33,7 @@ header a{
 header{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 98.2%;
     transition: all .3s ease;
     border: solid;
    padding: 20px;
@@ -42,8 +42,9 @@ header{
    padding: 20px;
    margin-left: 0px;
    margin-right: 0px;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
    justify-content: space-between;
+   border-radius: 20px;
 }
 
 header .socials{
@@ -120,7 +121,7 @@ header article:hover img:last-child{
     border-radius: 20px;
     height: 210px;
     width: 200px;
-    margin-right: 40px;
+    
 }
 
 header ul{
