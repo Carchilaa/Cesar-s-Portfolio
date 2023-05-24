@@ -6,15 +6,18 @@ main{
     background-color: white;
 }
 
-body{
+html,body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
+    margin:0;
+    background-color: black;
 }
 
 header{
     border: solid;
     border-color: black;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 header nav ul{
@@ -32,13 +35,11 @@ header a{
 
 header{
     display: flex;
-    flex-direction: row;
+
     width: 98.2%;
     transition: all .3s ease;
     border: solid;
-   padding: 20px;
-   padding-bottom: 100%;
-   background-color: rgb(0, 0, 0);
+   background-color:black;
    padding: 20px;
    margin-left: 0px;
    margin-right: 0px;
@@ -122,6 +123,16 @@ header article:hover img:last-child{
     height: 210px;
     width: 200px;
     
+}
+
+.redes ul li{
+    display: flex;
+    align-items: center;
+}
+
+.redes ul li a{
+    display: flex;
+    align-items: center;
 }
 
 header ul{
