@@ -3,7 +3,7 @@
 main{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: white;
 }
 
 body{
@@ -161,8 +161,8 @@ header ul li span{
    font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 14ch;
-    animation: escribir 2s steps(14),
+    width: 13ch;
+    animation: escribir 2s steps(13),
     blink .5s infinite step-end alternate;
     overflow: hidden;
     margin: 10px;
@@ -184,9 +184,6 @@ header ul img{
 }
 
 
-body section{
-    border: solid;
-}
 
 footer{
     display: flex;
@@ -195,13 +192,20 @@ footer{
     background-color: black;
 }   
 
+div .title{
+    display: flex;
+    justify-content: center;
+}
+
 footer p{
     color: white;
 }
 
 .Bio p{
-    color: white;
+    color: black;
     margin-left: 20px;
+    text-align: justify;
+    margin-right: 20px;
 
 }
 
@@ -223,26 +227,19 @@ footer p{
     margin-right: 10px;
 
 }
-.Projet1{
-    border: solid;
-    border-color: white;
-}
+
 
 .Projet1 p{
-    color: white;
+    color: black;
 }
 
 .Projet1 img{
     width: 400px;
 }
 
-.Projet2{
-    border: solid;
-    border-color: white;
-}
 
 .Projet2 p{
-    color: white;
+    color: black;
    
 }
 
@@ -250,13 +247,10 @@ footer p{
     width: 315px;
 }
 
-.Projet3{
-    border: solid;
-    border-color: white;
-}
+
 
 .Projet3 p{
-    color: white;
+    color: black;
 }
 
 
@@ -281,9 +275,13 @@ footer p{
     transition: all 0.3s ease; 
   }
 
+  .Projets div:hover p{
+    transform: scale(1.1);
+  }
+
   .MaForm{
-    color: white;
-    border: solid;
+    color: black;
+    margin-left: 20px;
   }
 
 
