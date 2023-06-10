@@ -305,6 +305,10 @@ div .title{
     width: 100%;
   }
 
+  #Bio h2{
+    margin-top: 0;
+  }
+
   #Projets{
     height: 100%;
     width: 100%; 
@@ -313,6 +317,14 @@ div .title{
   #Formation{
     height: 100%;
     width: 100%;
+  }
+
+  #Projets h2{
+    margin-top: 0;
+  }
+
+  #Formation h2{
+    margin: 0;
   }
 
   .allProjets{
@@ -384,6 +396,14 @@ div .title{
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  footer a{
+    text-decoration: none;
+  }
+
+  .allProjets a{
+    text-decoration: none;
   }
 
   
