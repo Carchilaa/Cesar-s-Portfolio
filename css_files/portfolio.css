@@ -1,9 +1,14 @@
 
-
+@font-face {
+  font-family: mainFont;
+  src: url(fonts\Bebas_Neue\BebasNeue-Regular.ttf);
+}
 main{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin: 0%;
@@ -14,7 +19,7 @@ html{
 }
 
 html,body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: mainFont;
     width: 100%;
     background-color: black;
     height: 100%;
@@ -111,7 +116,7 @@ header ul{
 header ul li span{
     text-decoration: none;
     color: black;
-    font-family: monospace;
+    font-family: mainFont;
     white-space: nowrap;
     justify-content: center;
     padding-left: 5px;
@@ -128,7 +133,7 @@ header ul li span{
 .contenedor span{
    display: block;
    font-size: 85px;
-   font-family: monospace;
+   font-family: mainFont;
     white-space: nowrap;
     border-right: 4px solid;
     width: 13ch;
@@ -324,18 +329,6 @@ div .title{
     margin: 0;
   }
 
-  .allProjets{
-    display:flex ;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 100%;
-  }
-
-
-  .allProjets p{
-    color: white;
-  }
-
   .general{
     display: flex;
     height: 100%;
@@ -361,7 +354,7 @@ div .title{
 
   .transparent{
     font-size: 35px;
-    color:black ;
+    color:rgb(255, 255, 255) ;
     margin-left: 20px;
     -webkit-text-stroke: .5px white;
   }
@@ -376,19 +369,7 @@ div .title{
     margin-bottom: 80px;
   }
 
-  .first_row{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-  }
-
   
-
-  .second_row{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
 
   footer{
     width: 100%;
@@ -400,14 +381,69 @@ div .title{
     text-decoration: none;
   }
 
-  .allProjets a{
-    text-decoration: none;
-  }
+  /* Estilos para las cartas de proyectos */
+  .allProjets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-  
-  
-  
-  
-  
-  
-  
+.projet-card {
+    display: block; /* Asegura que el <a> se comporte como un bloque */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto de la tarjeta */
+    width: 300px; /* Ajusta el tamaño según tu necesidad */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.projet-card:hover {
+    transform: scale(1.05);
+}
+
+.projet-image {
+  height: 200px; /* Ajusta la altura a tus necesidades */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projet-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.projet-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.buttons-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
