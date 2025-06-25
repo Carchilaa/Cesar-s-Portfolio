@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Cesar's Portfolio - Installation d'un poste pour le développement
-    </title>
+    <title>Cesar's Portfolio - Soutien Plus</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,13 +38,11 @@
       <aside class="project-sidebar">
         <div class="project-overview">
           <img
-            src="./img/post-pour-le-dev.jpeg"
-            alt="Image"
+            src="./img/Personnes-agee.jpg"
+            alt="Image de présentation du projet Soutien Plus"
             class="project-hero-image"
           />
-          <h3 class="current-project-title">
-            Installation d'un poste pour le développement.
-          </h3>
+          <h3 class="current-project-title">Soutien Plus</h3>
         </div>
 
         <nav class="project-navigation">
@@ -95,16 +91,24 @@
         <div class="project-details">
           <h2 class="section-heading">Description du projet</h2>
           <p>
-            Dans ce projet, on devait être capables d'installer dans une machine
-            virtuelle, le système d'exploitation Debian 11 pour que l'on puisse
-            ensuite l'utiliser pour le développement. Pour cela, on devait
-            installer un JDK, GIT et IntelliJ IDEA Community.
+            Conception et développement d'une application collaborative
+            multiplateforme destinée à faciliter la gestion du maintien à
+            domicile des personnes âgées. Ce projet a été réalisé en équipe de 7
+            personnes durant l'année universitaire 2024/2025.
           </p>
-          <p>
-            Ensuite, on a dû réaliser une carte mentale explicative pour que
-            n'importe qui puisse installer le système d'exploitation Debian 11
-            dans son ordinateur.
-          </p>
+
+          <h2 class="section-heading">Rôle et Responsabilités</h2>
+          <p>J'ai occupé le rôle de Lead Développeur Backend sur ce projet.</p>
+
+          <h2 class="section-heading">Compétences Techniques Utilisées</h2>
+          <ul class="tech-list">
+            <li>Java</li>
+            <li>Springboot</li>
+            <li>PostgreSQL</li>
+            <li>Figma</li>
+            <li>Angular</li>
+            <li>Git</li>
+          </ul>
 
           <h2 class="section-heading contact-heading">Me contacter</h2>
           <p>Si vous êtes intéressé(e) n'hésitez pas à me contacter par :</p>
@@ -119,12 +123,6 @@
               <span class="contact-label">Téléphone:</span>
               <a href="tel:+33769649886">+33 07 69 64 98 86</a>
             </li>
-            <li>
-              <span class="contact-label">LinkedIn:</span>
-              <a href="tel:+33769649886"
-                >https://www.linkedin.com/in/archilac/</a
-              >
-            </li>
           </ul>
         </div>
       </section>
@@ -135,7 +133,6 @@
     </footer>
 
     <script>
-      // Simple JS to highlight the current page in the sidebar navigation
       document.addEventListener("DOMContentLoaded", () => {
         const currentPath = window.location.pathname.split("/").pop();
         const navLinks = document.querySelectorAll(
@@ -146,7 +143,7 @@
           if (link.getAttribute("href").split("/").pop() === currentPath) {
             link.classList.add("active");
           } else {
-            link.classList.remove("active"); // Ensure only one is active
+            link.classList.remove("active");
           }
         });
       });

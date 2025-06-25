@@ -1,33 +1,33 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const initialCardsToShow = 3; // Cuántas cartas mostrar inicialmente
-    const cards = document.querySelectorAll('.projet-card');
-    const viewMoreBtn = document.getElementById('viewMoreBtn');
-    const viewLessBtn = document.getElementById('viewLessBtn');
+document.addEventListener("DOMContentLoaded", function () {
+  const initialCardsToShow = 3;
+  const cards = document.querySelectorAll(".projet-card");
+  const viewMoreBtn = document.getElementById("viewMoreBtn");
+  const viewLessBtn = document.getElementById("viewLessBtn");
 
-    // Ocultar las cartas que superan el límite inicial
-    if (cards.length > initialCardsToShow) {
-        for (let i = initialCardsToShow + 1; i < cards.length; i++) {
-            cards[i].classList.add('hidden');
-        }
-    } else {
-        viewMoreBtn.style.display = 'none'; // Si no hay suficientes cartas, ocultar el botón "Ver más"
+  // Hide cards beyond the initial limit
+  // Start from `initialCardsToShow` to hide the rest
+  if (cards.length > initialCardsToShow) {
+    for (let i = initialCardsToShow; i < cards.length; i++) {
+      cards[i].classList.add("hidden");
     }
+    viewMoreBtn.style.display = "inline-block"; // Ensure button is visible if there are more cards
+  } else {
+    viewMoreBtn.style.display = "none"; // Hide if no more cards to show
+  }
 
-    // Mostrar más cartas al hacer clic en "Ver más"
-    viewMoreBtn.addEventListener('click', function () {
-        for (let i = initialCardsToShow; i < cards.length; i++) {
-            cards[i].classList.remove('hidden');
-        }
-        viewMoreBtn.style.display = 'none';
-        viewLessBtn.style.display = 'inline-block';
-    });
+  viewMoreBtn.addEventListener("click", function () {
+    for (let i = initialCardsToShow; i < cards.length; i++) {
+      cards[i].classList.remove("hidden");
+    }
+    viewMoreBtn.style.display = "none";
+    viewLessBtn.style.display = "inline-block";
+  });
 
-    // Ocultar cartas al hacer clic en "Volver a las cartas principales"
-    viewLessBtn.addEventListener('click', function () {
-        for (let i = initialCardsToShow + 1; i < cards.length; i++) {
-            cards[i].classList.add('hidden');
-        }
-        viewLessBtn.style.display = 'none';
-        viewMoreBtn.style.display = 'inline-block';
-    });
+  viewLessBtn.addEventListener("click", function () {
+    for (let i = initialCardsToShow; i < cards.length; i++) {
+      cards[i].classList.add("hidden");
+    }
+    viewLessBtn.style.display = "none";
+    viewMoreBtn.style.display = "inline-block";
+  });
 });

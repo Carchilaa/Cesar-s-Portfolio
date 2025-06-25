@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Cesar's Portfolio - Installation d'un poste pour le développement
-    </title>
+    <title>Cesar's Portfolio - Projet Docker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,13 +38,11 @@
       <aside class="project-sidebar">
         <div class="project-overview">
           <img
-            src="./img/post-pour-le-dev.jpeg"
-            alt="Image"
+            src="./img/docker.png"
+            alt="Image de présentation du Projet Docker"
             class="project-hero-image"
           />
-          <h3 class="current-project-title">
-            Installation d'un poste pour le développement.
-          </h3>
+          <h3 class="current-project-title">Projet Docker</h3>
         </div>
 
         <nav class="project-navigation">
@@ -80,13 +76,13 @@
               <a href="./projet6.html">Exploitation d'une base de données</a>
             </li>
             <li><a href="./projet7.html">Création d'une base de données</a></li>
-            <li><a href="./projet8.html" class="active">Soutien Plus</a></li>
+            <li><a href="./projet8.html">Soutien Plus</a></li>
             <li>
               <a href="./projet9.html"
                 >Développement d'un serious game éducatif</a
               >
             </li>
-            <li><a href="./projet10.html">Projet Docker</a></li>
+            <li><a href="./projet10.html" class="active">Projet Docker</a></li>
           </ul>
         </nav>
       </aside>
@@ -95,15 +91,21 @@
         <div class="project-details">
           <h2 class="section-heading">Description du projet</h2>
           <p>
-            Dans ce projet, on devait être capables d'installer dans une machine
-            virtuelle, le système d'exploitation Debian 11 pour que l'on puisse
-            ensuite l'utiliser pour le développement. Pour cela, on devait
-            installer un JDK, GIT et IntelliJ IDEA Community.
+            Réalisation d'un déploiement complet de l'application Leed, un
+            agrégateur RSS minimaliste, dans le cadre du module de
+            virtualisation avancée. Ce projet a été réalisé individuellement en
+            2024/2025.
           </p>
+
+          <h2 class="section-heading">Aspects techniques</h2>
           <p>
-            Ensuite, on a dû réaliser une carte mentale explicative pour que
-            n'importe qui puisse installer le système d'exploitation Debian 11
-            dans son ordinateur.
+            Le projet a impliqué la conception d'une infrastructure multi-tiers
+            avec Docker et Docker-Compose. J'ai également travaillé sur la
+            création d'images Docker sur mesure en respectant les bonnes
+            pratiques de packaging, la gestion de la persistance des données à
+            l'aide de volumes, ainsi que la centralisation de la configuration
+            dans un fichier .env. Les modes d'exécution (développement et
+            production) ont été distingués pour adapter les environnements.
           </p>
 
           <h2 class="section-heading contact-heading">Me contacter</h2>
@@ -119,12 +121,6 @@
               <span class="contact-label">Téléphone:</span>
               <a href="tel:+33769649886">+33 07 69 64 98 86</a>
             </li>
-            <li>
-              <span class="contact-label">LinkedIn:</span>
-              <a href="tel:+33769649886"
-                >https://www.linkedin.com/in/archilac/</a
-              >
-            </li>
           </ul>
         </div>
       </section>
@@ -135,7 +131,6 @@
     </footer>
 
     <script>
-      // Simple JS to highlight the current page in the sidebar navigation
       document.addEventListener("DOMContentLoaded", () => {
         const currentPath = window.location.pathname.split("/").pop();
         const navLinks = document.querySelectorAll(
@@ -146,7 +141,7 @@
           if (link.getAttribute("href").split("/").pop() === currentPath) {
             link.classList.add("active");
           } else {
-            link.classList.remove("active"); // Ensure only one is active
+            link.classList.remove("active");
           }
         });
       });

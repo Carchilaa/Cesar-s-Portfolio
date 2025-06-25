@@ -1,75 +1,153 @@
 <!DOCTYPE html>
-  <html lang="fr">
-    <head>
-      <meta charset="UTF-8">
-      <title>Mon portfolio</title>
-      <link rel="stylesheet" href="./css_files/projet.css"> <!-- Feuille de style principale -->
-      <link rel="stylesheet" href="themes/white.css"> <!-- Changement de thème ici -->
-    </head>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cesar's Portfolio - Creation d'un site internet pour une ESN.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css_files/projet.css" />
+  </head>
 
-    <body>
+  <body>
+    <header id="project-header">
+      <div class="header-content">
+        <a href="./index.html" class="back-home-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 242, 255, 1); transform: ; msfilter: "
+          >
+            <path
+              d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
+            ></path>
+          </svg>
+          <span>Retour au Portfolio</span>
+        </a>
+        <p class="project-page-title">César Archila</p>
+      </div>
+    </header>
 
-        <!-- 
-          Barre de navigation principale.
-          À noter : le lien actif contient un nom de classe "actif"
-        -->
-      <header id="projetheader">
-        <a href="./index.html"><p>Cesar Archila</p></a>
-      </header>
-
-      <main>
-
-
-
-        <aside>
-          <div>
-            <img src="./img/cgi.png" alt="Photo">
-          </div>
-          <div>
-            <nav>
-              <ul>
-                <a href="./index.html"><li>Page d'acceuil.</li></a>
-                <a href="./projet1.html"><li>Installation d'un post pour le developpement.</li></a>
-                <a href="./projet2.html"><li>Conception et Développement d'un logiciel de gestion d'évènement</li></a>
-                <a href="./projet3.html"><li style="color: yellow;">Creation d'un site internet pour une ESN</li></a>
-                <a href="./projet4.html"><li>Développement d'un programme de classification automatique de depéches</li></a>
-                <a href="./projet5.html"><li>Installation de services réseaux</li></a>
-                <a href="./projet6.html"><li>Exploitation d'une base de données</li></a>
-                <a href="./projet7.html"><li>Creation d'une base de données</li></a>
-      
-              </ul>
-             </nav>
-          </div>
-          </div>
-        </aside>
-
-        <div class="content">
-          <h1>Creation d'un site internet pour une ESN.</h1>
-          <h2>Description du projet</h2>
-          <p> Dans un premiere temps, on a du chercher le contexte de l'entreprise choisit (activité de l'entreprise, clients, valeurs, concurrents, etc...). Ensuite, 
-            on a analyser la transition écologique et numérique. Puis on a fait un receuil des besoin en forme de synthése.
-          </p>
-          <p>Dans un deuxieme temps, a partir des informations recueillies, on a proposé une architecture de notre site en suivant une
-            approche de conception. Puis, on a réalisé le site internet de l'entreprise à destination d'un public non
-            technique en présentant les informations fournies par l'entreprise sous une forme vulgarisée comprise par
-            le plus grand nombre.</p>
-
-
-          <h1>Me contacter</h1>
-          <p>Si vous êtes intéressé(e) n'hésitez pas à me contacter par : </p>
-          <p>Gmail : caarchila2003@gmail.com</p>
-          <p>Téléphone : +33 07 69 64 98 86</p>
+    <main class="project-main-content">
+      <aside class="project-sidebar">
+        <div class="project-overview">
+          <img src="./img/cgi.png" alt="Image" class="project-hero-image" />
+          <h3 class="current-project-title">
+            Creation d'un site internet pour une ESN
+          </h3>
         </div>
 
+        <nav class="project-navigation">
+          <ul>
+            <li>
+              <a href="./projet1.html"
+                >Installation d'un poste pour le développement.</a
+              >
+            </li>
+            <li>
+              <a href="./projet2.html"
+                >Conception et Développement d'un logiciel de gestion
+                d'évènement</a
+              >
+            </li>
+            <li>
+              <a href="./projet3.html"
+                >Création d'un site internet pour une ESN</a
+              >
+            </li>
+            <li>
+              <a href="./projet4.html"
+                >Développement d'un programme de classification automatique de
+                dépêches</a
+              >
+            </li>
+            <li>
+              <a href="./projet5.html">Installation de services réseaux</a>
+            </li>
+            <li>
+              <a href="./projet6.html">Exploitation d'une base de données</a>
+            </li>
+            <li><a href="./projet7.html">Création d'une base de données</a></li>
+            <li><a href="./projet8.html" class="active">Soutien Plus</a></li>
+            <li>
+              <a href="./projet9.html"
+                >Développement d'un serious game éducatif</a
+              >
+            </li>
+            <li><a href="./projet10.html">Projet Docker</a></li>
+          </ul>
+        </nav>
+      </aside>
 
+      <section class="project-details-section">
+        <div class="project-details">
+          <h2 class="section-heading">Description du projet</h2>
+          <p>
+            Dans un premiere temps, on a du chercher le contexte de l'entreprise
+            choisit (activité de l'entreprise, clients, valeurs, concurrents,
+            etc...). Ensuite, on a analyser la transition écologique et
+            numérique. Puis on a fait un receuil des besoin en forme de
+            synthése.
+          </p>
+          <p>
+            Dans un deuxieme temps, a partir des informations recueillies, on a
+            proposé une architecture de notre site en suivant une approche de
+            conception. Puis, on a réalisé le site internet de l'entreprise à
+            destination d'un public non technique en présentant les informations
+            fournies par l'entreprise sous une forme vulgarisée comprise par le
+            plus grand nombre.
+          </p>
 
-      </main>
+          <h2 class="section-heading contact-heading">Me contacter</h2>
+          <p>Si vous êtes intéressé(e) n'hésitez pas à me contacter par :</p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Gmail:</span>
+              <a href="mailto:caarchila2003@gmail.com"
+                >caarchila2003@gmail.com</a
+              >
+            </li>
+            <li>
+              <span class="contact-label">Téléphone:</span>
+              <a href="tel:+33769649886">+33 07 69 64 98 86</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn:</span>
+              <a href="tel:+33769649886"
+                >https://www.linkedin.com/in/archilac/</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-      <!-- Barre des réseaux sociaux -->
-      <footer>
-      <p style="color: white;">Carchila's Portfolio</p>  
-      </footer>
-    </body>
-  </html>
+    <footer>
+      <p>Carchila's Portfolio</p>
+    </footer>
 
+    <script>
+      // Simple JS to highlight the current page in the sidebar navigation
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentPath = window.location.pathname.split("/").pop();
+        const navLinks = document.querySelectorAll(
+          ".project-navigation ul li a"
+        );
 
+        navLinks.forEach((link) => {
+          if (link.getAttribute("href").split("/").pop() === currentPath) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active"); // Ensure only one is active
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
